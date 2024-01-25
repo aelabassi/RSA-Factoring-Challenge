@@ -8,9 +8,14 @@
 */
 int main(int argc, char *argv[])
 {
-	int f;
+
 
 	if (argc != 2)
+	{
 		fprintf(stderr, "Usage: factors <filename>\n");
-	f = _factorize(argv);
+		exit(EXIT_FAILURE);
+	}
+	_factorize(argv);
+
+	return (0);
 }

@@ -3,9 +3,8 @@
 /**
  * _factorize - entry point
  * @argv: (char* []) the arguments
- * Return: 0 on success
 */
-int _factorize(char *argv[])
+void _factorize(char *argv[])
 {
 	char buffer[500];
 	int factor = 0;
@@ -32,6 +31,4 @@ int _factorize(char *argv[])
 		}
 	}
 	fclose(fd);
-
-	return (0);
 }
