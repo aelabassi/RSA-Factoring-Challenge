@@ -9,7 +9,7 @@
 #include <ctype.h>
 
 
-int _factorize(char *argv[]);
+
 
 
 
