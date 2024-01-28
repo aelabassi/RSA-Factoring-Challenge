@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef FACTORS_H
+#define FACTORS_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -14,7 +14,8 @@
 typedef unsigned long long  int bignum_;
 
 void _factorize(char *argv[]);
-
+int _isPrime(u_int64_t n);
+void _rsa(char *argv[]);
 
 
 

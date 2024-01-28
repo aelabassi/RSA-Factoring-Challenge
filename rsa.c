@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "Usage: factors <file>\n");
 		exit(EXIT_FAILURE);
 	}
-	_factorize(argv);
+	_rsa(argv);
 
 	return (0);
 }

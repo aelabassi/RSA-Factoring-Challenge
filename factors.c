@@ -1,5 +1,4 @@
-#include "main.h"
-#define _GNU_SOURCE
+#include "factors.h"
 /**
  * _factorize - entry point
  * @argv: (char* []) the arguments
@@ -7,8 +6,8 @@
 void _factorize(char *argv[])
 {
 	char buffer[500];
-	bignum_ num;
-	bignum_ i;
+	u_int64_t num;
+	u_int64_t i;
 	FILE *fd = fopen(argv[1], "r");
 
 
@@ -19,7 +18,7 @@ void _factorize(char *argv[])
 	}
 	while (fgets(buffer, 500, fd) != NULL)
 	{
-		num = (bignum_)atoi(buffer);
+		num = atoi(buffer);
 		for (i = 2; i < sqrt(num) + 1; i++)
 		{
 			if (num % i == 0)
