@@ -11,7 +11,7 @@
 
 #define _GNU_SOURCE
 
-typedef unsigned long int bignum_;
+typedef unsigned long long  int bignum_;
 
 void _factorize(char *argv[]);
 
