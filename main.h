@@ -9,6 +9,9 @@
 #include <ctype.h>
 #include <math.h>
 
+#define _GNU_SOURCE
+
+typedef unsigned long int bignum_;
 
 void _factorize(char *argv[]);
 
