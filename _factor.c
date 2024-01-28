@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * main - entry point
  * @argc: (int) number of arguments
@@ -12,7 +11,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 2)
 	{
-		fprintf(stderr, "Usage: factors <filename>\n");
+		fprintf(stderr, "Usage: factors <file>\n");
 		exit(EXIT_FAILURE);
 	}
 	_factorize(argv);

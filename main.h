@@ -7,6 +7,7 @@
 #include <string.h>
 #include <stdarg.h>
 #include <ctype.h>
+#include <math.h>
 
 
 void _factorize(char *argv[]);

@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _factorize - entry point
  * @argv: (char* []) the arguments
@@ -14,13 +13,13 @@ void _factorize(char *argv[])
 
 	if (fd == NULL)
 	{
-		fprintf(stderr, "I wasn's able to read the file, make sure it exists\n");
+		fprintf(stderr, "File not found\n");
 		exit(EXIT_FAILURE);
 	}
 	while (fgets(buffer, 500, fd) != NULL)
 	{
 		num = atoi(buffer);
-		for (i = 2; i < num; i++)
+		for (i = 2; i <= sqrt(num); i++)
 		{
 			if (num % i == 0)
 			{
